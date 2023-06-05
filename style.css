@@ -806,7 +806,7 @@ span {
 
     .home .profession-container .overlay {
         position: fixed;
-        top: 70rem;
+        top: 100rem;
         left: 50%;
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
