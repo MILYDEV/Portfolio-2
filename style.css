@@ -309,6 +309,9 @@ span {
 
 .about-img img {
     width: 40vw;
+    border: 1rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 .heading {
@@ -383,22 +386,22 @@ span {
     margin: 1rem 0 3rem;
 }
 
-.portofolio {
+.Portfolio {
     padding-bottom: 10rem;
 }
 
-.portofolio h2 {
+.Portfolio h2 {
     margin-bottom: 4rem;
 }
 
-.portofolio .portofolio-container {
+.Portfolio .Portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
 
-.portofolio-container .portofolio-box {
+.Portfolio-container .Portfolio-box {
     position: relative;
     display: flex;
     border-radius: 2rem;
@@ -406,16 +409,16 @@ span {
     overflow: hidden;
 }
 
-.portofolio-box img {
+.Portfolio-box img {
     width: 100%;
     transition: 0.5s ease;
 }
 
-.portofolio-box:hover img {
+.Portfolio-box:hover img {
     transform: scale(1.1);
 }
 
-.portofolio-box .portofolio-layer {
+.Portfolio-box .Portfolio-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -432,20 +435,21 @@ span {
     transition: 0.5s ease;
 }
 
-.portofolio-box:hover .portofolio-layer {
+.Portfolio-box:hover .Portfolio-layer {
     opacity: 1;
 }
 
-.portofolio-layer h4 {
+.Portfolio-layer h4 {
     font-size: 3rem;
+    color: var(--white-color);
 }
 
-.portofolio-layer p {
+.Portfolio-layer p {
     font-size: 1.6rem;
     margin: 0.3rem 0 1rem;
 }
 
-.portofolio-layer a {
+.Portfolio-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -456,9 +460,9 @@ span {
     border-radius: 50%;
 }
 
-.portofolio-layer a i {
+.Portfolio-layer a i {
     font-size: 2rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 .testimonial-container {
@@ -622,7 +626,7 @@ span {
         height: 85.8rem;
     }
 
-    .home .profession-container .portofolio-box {
+    .home .profession-container .Portfolio-box {
         right: -12rem;
         height: 85.8rem;
     }
@@ -679,7 +683,7 @@ span {
     }
 
     .services,
-    .portofolio {
+    .Portfolio {
         padding-bottom: 7rem;
     }
 
@@ -830,11 +834,11 @@ span {
     }
 
     .services h2,
-    .portofolio h2 {
+    .Portfolio h2 {
         margin-bottom: 3rem;
     }
 
-    .portofolio .portofolio-container {
+    .Portfolio .Portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -853,7 +857,7 @@ span {
 }
 
 @media (max-width: 617px) {
-    .portofolio .portofolio-container {
+    .Portfolio .Portfolio-container {
         grid-template-columns: 1fr;
     }
 }
